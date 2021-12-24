@@ -1,0 +1,19 @@
+<div class="body">
+  <div class="left">
+    <div class="name">
+      <label for="Location Name">Location Name</label>
+      <input [(ngModel)]="data.location" type="text">
+    </div>
+    <div class="name">
+      <label for="latName">Enter Lattitude</label>
+      <input [(ngModel)]="data.latitude" type="text">
+    </div>
+    <div class="name">
+      <label for="lonName">Enter Longitude</label>
+      <input [(ngModel)]="data.longitude" type="text">
+    </div>
+  </div>
+  <div class="right">
+    <button (click)="addLocation()">Submit</button>
+  </div>
+</div>

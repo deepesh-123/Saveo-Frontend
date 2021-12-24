@@ -1,0 +1,22 @@
+<div class="appBody">
+  <div class="body">
+    <h3>ALL COORDINATES</h3>
+    <div *ngFor="let place of mapData, index as i" class="list">
+      <div class="name">
+        {{i+1+' '+place.location}}
+      </div>
+      <div class="latlon">
+        <div class="latt">
+          {{place.latitude}}
+        </div>
+        <div class="long">
+          {{place.longitude}}
+        </div>
+      </div>
+    </div>
+  </div>
+  <label *ngif="exceeded"> You exceeded your quota of Y requests for this interval</label>
+  <div class="routeBtn">
+    <button (click)="showRoute()" class="routeBn">Show Route</button>
+  </div>
+</div>

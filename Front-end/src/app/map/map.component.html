@@ -1,0 +1,9 @@
+<div>
+  <agm-map [latitude]="22.719568" [longitude]="75.857727">
+    <agm-marker *ngFor="let place of mapData" [latitude]="place.latitude" [longitude]="place.longitude"></agm-marker>
+    <agm-polyline *ngIf="showRoute">
+      <agm-polyline-point *ngFor="let place of mapData" [latitude]="place.latitude" [longitude]="place.longitude">
+      </agm-polyline-point>
+    </agm-polyline>
+  </agm-map>
+</div>
