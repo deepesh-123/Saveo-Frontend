@@ -8,3 +8,5 @@ Set environment variable-
 Go to Front-end
    npm install
    ng serve
+   
+   Pass your api key in module.ts for google map
